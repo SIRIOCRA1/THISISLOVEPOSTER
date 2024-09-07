@@ -3,14 +3,14 @@
 import processing.serial.*;
 
 Serial myPort;  // El objeto de comunicación serial
-PImage image1, image2;  // Las dos imágenes a mostrar
+PImage imagen1, imagen2;  // Las dos imágenes a mostrar
 
 void setup() {
-  size(800, 600);  // Tamaño de la ventana de visualización
+  size(500, 730);  // Tamaño de la ventana de visualización
   
   // Cargar las imágenes
-  image1 = loadImage("image1.jpg");  // Asegúrate de tener 'image1.jpg' en la carpeta 'data'
-  image2 = loadImage("image2.jpg");  // Asegúrate de tener 'image2.jpg' en la carpeta 'data'
+  image1 = loadImage("imagen1.jpg");  // Asegúrate de tener 'imagen1.jpg' en la carpeta 'data'
+  image2 = loadImage("imagen2.jpg");  // Asegúrate de tener 'imagen2.jpg' en la carpeta 'data'
 
   // Configurar el puerto serial
   String portName = Serial.list()[0];  // Asegúrate de seleccionar el puerto correcto
